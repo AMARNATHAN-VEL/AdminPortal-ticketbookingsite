@@ -70,13 +70,13 @@ const AdminLayout = () => {
           ))}
         </nav>
 
-        <div className="mt-10 rounded-3xl bg-surface-muted p-4 text-sm text-on-light shadow-sm">
+        {/* <div className="mt-10 rounded-3xl bg-surface-muted p-4 text-sm text-on-light shadow-sm">
           <p className="font-semibold text-on-light">Quick tips</p>
           <p className="mt-2 leading-6 text-on-light-muted">
             Use the sidebar to switch between dashboard, event management, and
             bookings.
           </p>
-        </div>
+        </div> */}
 
         <div className="mt-auto rounded-3xl bg-surface p-4 text-sm text-on-light shadow-sm ring-1 ring-border">
           <div className="flex items-center gap-3">
