@@ -16,9 +16,9 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const [eventsRes, bookingsRes, usersRes] = await Promise.all([
-          fetch("http://localhost:3000/events"),
-          fetch("http://localhost:3000/booking"),
-          fetch("http://localhost:3000/users"),
+          fetch("https://adminportal-ticketbookingsite.onrender.com"),
+          fetch("https://adminportal-ticketbookingsite.onrender.com"),
+          fetch("https://adminportal-ticketbookingsite.onrender.com"),
         ]);
 
         if (!eventsRes.ok || !bookingsRes.ok || !usersRes.ok) {

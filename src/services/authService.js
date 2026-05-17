@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://adminportal-ticketbookingsite.onrender.com";
 const ADMIN_PATH = "/admin";
 
 export const authenticateAdmin = async (username, password) => {

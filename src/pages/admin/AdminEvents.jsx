@@ -20,7 +20,7 @@ const AdminEvents = () => {
   const [deletingEvent, setDeletingEvent] = useState(null);
   const [deleteLoading, setDeleteLoading] = useState(false);
   const navigate = useNavigate();
-  const { get, del, loading } = useApi("http://localhost:3000");
+  const { get, del, loading } = useApi("https://adminportal-ticketbookingsite.onrender.com");
 
   useEffect(() => {
     loadEvents();

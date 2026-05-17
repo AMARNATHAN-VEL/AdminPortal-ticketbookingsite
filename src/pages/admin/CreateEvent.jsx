@@ -5,7 +5,7 @@ import { EVENT_PATH } from "../../services/eventService";
 
 const CreateEvent = () => {
   const navigate = useNavigate();
-  const { post } = useApi("http://localhost:3000");
+  const { post } = useApi("https://adminportal-ticketbookingsite.onrender.com");
   const [formData, setFormData] = useState({
     title: "",
     category: "",

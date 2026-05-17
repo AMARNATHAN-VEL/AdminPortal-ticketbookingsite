@@ -26,7 +26,7 @@ const AdminBookings = () => {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [selectedBooking, setSelectedBooking] = useState(null);
   // const navigate = useNavigate();
-  const { get, put, loading } = useApi("http://localhost:3000");
+  const { get, put, loading } = useApi("https://adminportal-ticketbookingsite.onrender.com");
 
   useEffect(() => {
     loadData();
