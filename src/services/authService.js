@@ -1,15 +1,26 @@
-const API_BASE_URL = "https://adminportal-ticketbookingsite.onrender.com";
+const API_BASE_URL =
+  "https://adminportal-ticketbookingsite.onrender.com";
+
 const ADMIN_PATH = "/admin";
 
 export const authenticateAdmin = async (username, password) => {
   const response = await fetch(`${API_BASE_URL}${ADMIN_PATH}`);
+
   if (!response.ok) {
     throw new Error("Unable to connect to authentication API.");
   }
 
-  const admin = await response.json();
+  // API returns array
+  const admins = await response.json();
 
-  if (!admin || admin.username !== username || admin.password !== password) {
+  // first admin object
+  const admin = admins[0];
+
+  if (
+    !admin ||
+    admin.username !== username ||
+    admin.password !== password
+  ) {
     throw new Error("Invalid admin username or password.");
   }
 
