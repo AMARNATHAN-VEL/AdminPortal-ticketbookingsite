@@ -1,13 +1,14 @@
 {
 
-  "admin": {
+  "admin": [{
     "username": "admin",
     "password": "admin123",
     "name": "Admin User",
     "email": "admin@example.com",
     "phone": "(555) 123-4567",
     "joined": "January 2025"
-  },
+  }
+],
 
   "users": [
     {

@@ -12,9 +12,12 @@ export const authenticateAdmin = async (username, password) => {
 
   // API returns array
   const admins = await response.json();
+  
 
   // first admin object
   const admin = admins[0];
+
+  console.log(admin);
 
   if (
     !admin ||
