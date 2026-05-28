@@ -554,7 +554,7 @@
       ]
     }
   ],
-  "booking": [
+  "bookings": [
     {
       "id": "bk1001",
       "userId": "usr101",
@@ -638,6 +638,5 @@
         "revenue": 499
       }
     ]
-  },
-  "$schema": "./node_modules/json-server/schema.json"
+  }
 }
