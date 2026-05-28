@@ -554,7 +554,7 @@
       ]
     }
   ],
-  "bookings": [
+  "booking": [
     {
       "id": "bk1001",
       "userId": "usr101",
